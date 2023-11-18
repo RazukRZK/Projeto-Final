@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "reydex";
+    src: url(../fonts/Reydex.ttf);
+}
+
+:root{
+    --laranja:#F04006;
+    --cinza: #f3efef;
+    --branco:#ffffff;
+}
+
+header, footer{
+    background-color: var(--cinza);
+}
+
+
