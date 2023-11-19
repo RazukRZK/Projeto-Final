@@ -4,13 +4,14 @@
 }
 
 :root{
-    --laranja:#F04006;
     --cinza: #f3efef;
     --branco:#ffffff;
+    --azul:#56BBC6;
 }
 
 header, footer{
     background-color: var(--cinza);
 }
+
 
 

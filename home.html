@@ -6,6 +6,7 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style/Geral.css">
+    <link rel="stylesheet" href="style/home.css">
 </head>
 <body>
     <div id="page">
@@ -25,7 +26,7 @@
                         <a class="nav-link" href="pages/catalogo.html">Catálogo</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre nós</a>
+                        <a class="nav-link" href="pages/sobreNos.html">Sobre nós</a>
                       </li>
                     </ul>
                     <div class="d-flex gap-3" role="search">
@@ -117,9 +118,36 @@
             </section>
         </main>
 
+        <section id="receberpromo" class="d-flex justify-content-center my-3">
+          <button style="background-color: var(--azul); border: none; font-weight: 500;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#promocao">
+            Ofertas exclusivas
+          </button>
+        </section>
+
         <footer class="text-center py-3">
             <h5>Todos os direitos reservados a @RAZUK-CAPS - 2023</h5>
         </footer>
+    </div>
+
+    <!-- modal promoção -->
+    <div class="modal" tabindex="-1" id="promocao">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Insira seu e-mail para receber ofertas exclusivas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <label for="email"></label>
+              <input type="email" name="email" id="email" placeholder="Insira seu e-mail">
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+          </div>
+        </div>
+      </div>
     </div>
     
 

@@ -1,0 +1,24 @@
+@media screen and (max-width:1000px){
+
+    #primeiraParceria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #primeiraParceria #conteudo{
+        width: 100%;
+    }
+
+    #parceriaNeymar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    #parceriaNeymar #conteudo{
+        width: 100%;
+    }
+}
