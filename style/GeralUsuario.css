@@ -45,14 +45,17 @@ main{
     background-color: white;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #form{
     width: 60%;
+    min-width: 200px;
 }
 
 #banner{
     width: 40%;
+    min-width: 160px;
 }
 
 #banner img{
@@ -67,6 +70,7 @@ fieldset{
 }
 
 fieldset h1{
+    word-break: break-all;
     text-align: center;
     margin-bottom: 30px;
     font-weight: 400;
@@ -115,4 +119,11 @@ fieldset > input{
     text-align: center;
     font-size: 12px;
     gap: 7px;
+}
+
+@media screen and (max-width:1000px){
+
+   main{
+    justify-content: center;
+   }
 }
