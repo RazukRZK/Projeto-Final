@@ -9,8 +9,23 @@
     --azul:#56BBC6;
 }
 
-header, footer{
+#page{
+    display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+}
+
+header{
     background-color: var(--cinza);
+}
+
+main{
+    flex: 1;
+}
+
+footer{
+    background-color: var(--cinza);
+    margin-top: auto;
 }
 
 

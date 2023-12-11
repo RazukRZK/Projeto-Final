@@ -6,6 +6,7 @@
     <title>Carrinho</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/Geral.css">
+    <link rel="stylesheet" href="../style/carrinho.css">
 </head>
 <body>
     <div id="page">
@@ -13,7 +14,7 @@
             <nav class="navbar navbar-expand-lg px-4">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="../home.html" style="font-family: reydex ;">RAZUK CAPS</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
@@ -49,13 +50,15 @@
                 <h4 class="col-2 m-0 p-0" style="font-size: 18px;">Valor total</h4>
             </section>
 
+            <div id="espaco1"></div>
+
             <section id="produto1" class="container px-0 py-4 m-0 mx-auto d-flex row" style="font-family: Arial, Helvetica, sans-serif;">
-                <div class="col-6 m-0 p-0 d-flex">
+                <div class="col-6 m-0 p-0 d-flex" id="infoProduto1">
                     <div>
                         <img src="../images/nike-curva.png" alt="" style="width: 100px; height: 100px;">
                     </div>
                     <div style="font-size: 12px; line-height: 0.7em; height: 100px;" class="mx-4 d-flex flex-column justify-content-center">
-                        <p>Boné Nike Sportswear H86 Futura Washed Aba Curva Marinho</p>
+                        <p style="line-height: 1.2em">Boné Nike Sportswear H86 Futura Washed Aba Curva Marinho</p>
                         <p>Cor: Azul marinho</p>
                         <p>Preço: R$ 139,90</p>
                     </div>
@@ -71,8 +74,10 @@
                 </div>
             </section>
 
+            <div id="espaco2"></div>
+
             <section id="produto2" class="container px-0 py-4 m-0 mx-auto d-flex row" style="font-family: Arial, Helvetica, sans-serif;">
-                <div class="col-6 m-0 p-0 d-flex">
+                <div class="col-6 m-0 p-0 d-flex" id="infoProduto2">
                     <div>
                         <img src="../images/NY-curva.png" alt="" style="width: 100px; height: 100px;">
                     </div>
@@ -93,30 +98,35 @@
                 </div>
             </section>
 
+            <div id="espaco3"></div>
+
             <section id="subtotal" class="container px-0 py-4 m-0 mx-auto d-flex row" style="font-family: Arial, Helvetica, sans-serif;">
                 <div class="col-6 m-0 p-0">
                 </div>
                 <div class="col-2 m-0 p-0">
                 </div>
                 <div class="col-2 m-0 p-0">
-                    <p>Subtotal:</p>
+                    <p style="font-weight: 600;">Subtotal:</p>
                 </div>
                 <div class="col-2 m-0 p-0">
-                    <p>R$ 309,80</p>
+                    <p style="font-weight: 600;">R$ 309,80</p>
                 </div>
             </section>
 
+            <div id="espaco4"></div>
+
             <section id="finalizar"  class="container px-0 py-4 m-0 mx-auto d-flex justify-content-around" style="font-family: Arial, Helvetica, sans-serif;">
+
                 <div class= "d-flex flex-column gap-1">
                     <h3>Prazo de entrega</h3>
-                    <input type="number" placeholder="00000-000" style="width: 200px; border-radius: 1rem; padding: 7px;">
-                    <button style="width: 200px; border-radius: 1rem;" type="button">Calcular</button>
+                    <input type="number" placeholder="Digite seu CEP" style="width: 200px; border-radius: 1rem; padding: 7px;">
+                    <button class="p-1" style="width: 200px; border-radius: 1rem;" type="button">Calcular</button>
                 </div>
 
                 <div class= "d-flex flex-column gap-1">
                     <h3>Cupom de desconto</h3>
                     <input type="text" placeholder="Insira aqui seu cupom" style="width: 200px; border-radius: 1rem;padding: 7px;">
-                    <button style="width: 200px; border-radius: 1rem;" type="button">Aplicar</button>
+                    <button class="p-1" style="width: 200px; border-radius: 1rem;" type="button">Aplicar</button>
                 </div>
 
                 <div class= "d-flex flex-column gap-1">
@@ -125,7 +135,7 @@
                     <p>Frete: A calcular</p>
                     <p>Desconto: A calcular</p>
                     <p>Total da compra: R$ 309,80</p>
-                    <button style="width: 200px; border-radius: 1rem;" type="button">Finalizar compra</button>
+                    <button class="p-1" style="width: 200px; border-radius: 1rem;" type="button">Finalizar compra</button>
                 </div>
 
             </section>

@@ -1,0 +1,16 @@
+@media screen and (max-width:1000px){
+
+    #ajuda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #comunicacao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+ }
